@@ -1,9 +1,11 @@
 @font-face {
-    font-family: 'Helios', sans-serif;
-    src: url('../assets/fonts/HeliosC.woff');
-}
-
-@font-face {
-    font-family: 'Gilroy', sans-serif;
-    src: url('../assets/fonts/Gilroy-Medium.woff');
+    font-family: 'HeliosC';
+    src: url('HeliosC.eot');
+    src: local('HeliosC'),
+        url('../assets/fonts/HeliosC.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/HeliosC.woff2') format('woff2'),
+        url('../assets/fonts/HeliosC.woff') format('woff'),
+        url('../assets/fonts/HeliosC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
