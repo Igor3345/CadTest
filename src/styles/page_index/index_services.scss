@@ -1,0 +1,126 @@
+.services_section {
+    margin-top: 60px;
+
+    @media(max-width:991px) {
+        margin-top: 30px;
+    }
+
+    @media(max-width:767px) {
+        display: none;
+    }
+}
+
+.services_title {
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 70px;
+
+    @media(max-width:991px) {
+        margin-bottom: 0;
+    }
+}
+
+
+.services_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.services_cards__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all $transition;
+    padding: 44px 59px;
+    min-height: 371px;
+
+    &:hover {
+        box-shadow: 0px 14px 24px rgba(15, 18, 20, 0.1);
+        transition: all $transition;
+
+        .services_cards__icon {
+            background-color: #E9862A;
+            transition: all $transition ;
+
+            svg {
+                fill: #FFFFFF;
+                transition: all $transition ;
+            }
+        }
+
+        .services_cards__more {
+            height: auto;
+            transition: all $transition;
+        }
+
+        @media(max-width:991px) {
+            box-shadow: none
+        }
+    }
+
+    @media(max-width:991px) {
+        padding: 0;
+        min-height: 296px;
+    }
+}
+
+.services_cards__icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 44px;
+    transition: all $transition ;
+
+    svg {
+        width: 38px;
+        height: 38px;
+        fill: #4F4F4F;
+        transition: all $transition ;
+    }
+}
+
+.services_cards__title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 51px;
+
+    @media(max-width:991px) {
+        margin-bottom: 0;
+    }
+}
+
+.services_cards__more {
+    height: 0;
+    overflow: hidden;
+    transition: all $transition;
+
+    @media(max-width:991px) {
+        display: none;
+    }
+}
+
+.services_cards__link {
+    display: flex;
+    align-items: center;
+    padding: 19px 30px;
+    border: 1px solid #EBEBEB;
+
+
+    svg {
+        transform: rotate(180deg);
+        width: 14px;
+        height: 8px;
+        fill: #000000;
+        margin-top: 4px;
+        margin-left: 36px;
+    }
+}

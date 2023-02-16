@@ -1,0 +1,53 @@
+// bootstrap
+@import 'custom';
+@import '~bootstrap/scss/bootstrap';
+
+// vendors
+@import '~choices.js/public/assets/styles/choices.min.css';
+@import "tech/vendor/yalb";
+
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'common';
+@import 'spacing';
+
+// tech layout
+@import 'tech/forms';
+@import 'tech/files-n-socs';
+@import 'tech/reaction';
+@import 'tech/tags';
+
+
+@import 'layout';
+
+// bem entities
+@import 'bems';
+
+
+// swiper
+@import '~swiper/swiper.scss';
+
+//header
+@import 'header';
+
+//footer
+@import 'footer';
+
+//index
+@import './page_index/index_top.scss';
+@import './page_index/index_options.scss';
+@import './page_index/index_person_slider.scss';
+@import './page_index/index_services.scss';
+@import './page_index/index_vacansion.scss';
+@import './page_index/video_section.scss';
+@import './page_index/index_values.scss';
+@import './page_index/index_vacansion.scss';
+@import './page_index/index_profession.scss';
+@import './page_index/index_history.scss';
+
+
+//modal_window
+@import './modal_window/modal_layout.scss';
+@import './modal_window/modal_form.scss';
+@import './modal_window/modal_vacansion.scss';

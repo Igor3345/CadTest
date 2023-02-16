@@ -1,0 +1,41 @@
+header.header
+    .container 
+        .header_inner.js-header_burger
+            a.header_link(href="tech.html")
+                img.header_logo(src="./images/headerLogo.svg" alt="")
+            nav.nav.js-menu
+                ul.nav__list 
+                    li.nav__item 
+                        a.nav__link(href="javascript:void(0)") О нас
+                    li.nav__item 
+                        a.nav__link(href="javascript:void(0)") Наши ценности
+                    li.nav__item 
+                        a.nav__link(href="javascript:void(0)") Вакансии
+                    li.nav__item 
+                        a.nav__link(href="javascript:void(0)") Начало карьеры
+                    li.nav__item 
+                        a.nav__link(href="javascript:void(0)") Контакты
+                    li.nav__dropdown
+                        a.nav__dropLink(href="javascript:void(0)") Социальные сети
+                        ul.nav__submenu 
+                            li.nav__subLi 
+                                a.nav__socialLink.nav__socialLink__vk(href="javascript:void(0)")
+                                    svg 
+                                        use(xlink:href="images/sprite_build.svg#soc-vk")
+                            li.nav__subLi 
+                                a.nav__socialLink.nav__socialLink__ok(href="javascript:void(0)")
+                                    svg 
+                                        use(xlink:href="images/sprite_build.svg#soc-ok")
+                            li.nav__subLi 
+                                a.nav__socialLink.nav__socialLink__facebook(href="javascript:void(0)")
+                                    svg 
+                                        use(xlink:href="images/sprite_build.svg#soc-facebook")
+                            li.nav__subLi 
+                                a.nav__socialLink.nav__socialLink__instagramm(href="javascript:void(0)")
+                                    svg 
+                                        use(xlink:href="images/sprite_build.svg#soc-instagram2")
+
+            .burger_menu.js-burger-button
+                .burger_menu__item
+                .burger_menu__item
+                .burger_menu__item

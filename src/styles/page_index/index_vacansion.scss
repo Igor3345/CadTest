@@ -1,0 +1,289 @@
+.vacansion_section {
+    margin-top: 64px;
+
+    .button {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    @media(max-width: 991px) {
+        margin-top: 62px;
+    }
+}
+
+.vacansion_section__title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 400;
+
+    @media(max-width:767px) {
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
+
+.vacansion_selector {
+    display: flex;
+    align-items: center;
+    max-width: 756px;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 56px;
+    margin-bottom: 97px;
+
+    .box {
+        margin: 0 40px;
+    }
+
+    @media(max-width:991px) {
+        justify-content: flex-start;
+        margin-top: 48px;
+        margin-bottom: 66px;
+        padding: 0 30px;
+    }
+
+    @media(max-width:767px) {
+        display: none;
+    }
+}
+
+.vacansion_selector__option {
+    font-family: "Gilroy", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #828282;
+
+    @media(max-width:991px) {
+        max-width: 247px;
+        text-align: center;
+    }
+}
+
+.vacansion_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    margin-bottom: 17px;
+
+    &.vacansion_cards--hidden {
+        .vacansion_cards__item {
+            display: none;
+
+            &:nth-child(-n+3) {
+                display: flex;
+            }
+
+            @media(max-width:1200px) {
+                &:nth-child(-n+4) {
+                    display: flex;
+                }
+            }
+
+            @media(max-width:767px) {
+                &:nth-child(-n+3) {
+                    display: flex;
+                }
+
+                &:nth-child(n+4) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media(max-width:1200px) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+    }
+
+    @media(max-width:767px) {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+}
+
+.vacansion_cards__item {
+    border: 1px solid #EBEBEB;
+    padding: 66px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all $transition;
+
+
+
+    &:hover {
+        box-shadow: 0px 14px 24px rgba(15, 18, 20, 0.1);
+        transition: all $transition;
+
+        .vacansion_cards__icon {
+            background-color: #F58221;
+
+            svg {
+                fill: #fff;
+                transition: all $transition;
+            }
+        }
+    }
+
+    @media(max-width:991px) {
+        padding-top: 37px;
+        padding-left: 44px;
+        padding-right: 44px;
+        padding-bottom: 75px;
+    }
+
+    @media(max-width:767px) {
+        padding: 33px 24px 33px 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+.vacansion_cards__link {
+    display: flex;
+    align-items: center;
+    padding: 19px 30px;
+    border: 1px solid #EBEBEB;
+
+
+    svg {
+        transform: rotate(180deg);
+        width: 14px;
+        height: 8px;
+        fill: #000000;
+        margin-top: 4px;
+        margin-left: 36px;
+
+    }
+
+    @media(max-width:991px) {
+        display: none;
+    }
+
+    @media(max-width:767px) {
+        display: flex;
+        border: none;
+        font-size: 0;
+        padding: 5px;
+
+    }
+}
+
+.vacansion_cards__title {
+    font-weight: 400px;
+    font-size: 22px;
+    line-height: 27px;
+    color: #242627;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 46px;
+
+    @media(max-width:991px) {
+        margin-bottom: 25px;
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    @media(max-width: 767px) {
+        margin-bottom: 23px;
+        max-width: 205px;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: start;
+    }
+}
+
+.vacansion_cards__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003264;
+    margin-bottom: 67px;
+    transition: all $transition;
+
+    svg {
+        width: 18px;
+        height: 18px;
+        fill: #fff;
+        transition: all $transition;
+    }
+
+    @media(max-width:991px) {
+        margin-bottom: 56px;
+    }
+
+    @media(max-width:767px) {
+        display: none;
+    }
+}
+
+.vacansion_cards__cellary {
+    font-size: 18px;
+    line-height: 22px;
+    color: #242627;
+    font-weight: 400;
+    display: inline-block;
+
+    &.vacansion_cards__cellary--empty {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    @media(max-width:991px) {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    @media(max-width:767px) {
+        font-size: 13px;
+        line-height: 16px;
+        color: #828282;
+        text-align: start;
+    }
+}
+
+.vacansion_cards__content {
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(max-width:991px) {
+        margin-bottom: 0
+    }
+
+    @media(max-width:767px) {
+        align-items: flex-start;
+    }
+}
+
+.vacansion_cards__more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.vacansion_selector__wrapper {
+    margin-bottom: 32px;
+    margin-top: 32px;
+    padding: 0 15px;
+    display: none;
+
+    @media(max-width:767px) {
+        display: block;
+    }
+}
+
+.vacansion_container {
+    @media(max-width:767px) {
+        max-width: 100%;
+        padding: 0;
+    }
+}

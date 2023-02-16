@@ -1,0 +1,126 @@
+.professopn_section {
+    margin-top: 90px;
+    background: url('./images/profession_background.png') center center no-repeat;
+    background-size: cover;
+    max-width: 1480px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media(max-width:767px) {
+        display: none;
+    }
+}
+
+.profession_content {
+    padding-top: 86px;
+    padding-bottom: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(max-width:991px) {
+        padding-top: 41px;
+        padding-bottom: 65px;
+    }
+}
+
+.profession_content__titleBlock {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 84px;
+
+    @media(max-width:991px) {
+        margin-bottom: 68px;
+    }
+}
+
+.profession_content__title {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 400;
+    margin-bottom: 26px;
+}
+
+.profession_content__subtitle {
+    font-size: 22px;
+    line-height: 27px;
+    color: #242627;
+
+    @media(max-width:991px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.profession_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 100px;
+    margin-bottom: 80px;
+    max-width: 1150px;
+    width: 100%;
+
+    @media(max-width:1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:991px) {
+        padding: 0 140px;
+        grid-column-gap: 100px;
+        grid-row-gap: 60px;
+    }
+}
+
+.profession_items__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profession_items__icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 39px;
+
+    svg {
+        width: 34px;
+        height: 27px;
+    }
+
+    @media(max-width:991px) {
+        margin-bottom: 30px;
+    }
+}
+
+.profession_items__title {
+    font-size: 18px;
+    line-height: 22px;
+    color: #242627;
+
+    @media(max-width:991px) {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+}
+
+.profession_content__link {
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 600;
+
+    a {
+        font-weight: 400;
+    }
+
+    @media(max-width:1200px) {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}

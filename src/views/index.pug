@@ -1,0 +1,24 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+block main
+	include pages/index/top
+	.container 
+		include pages/index/options
+	include pages/index/personal_slider_section
+	.container 
+		include pages/index/services_section
+	include pages/index/video_section
+	include pages/index/values_section
+	.container.vacansion_container
+		include pages/index/vacansion_section
+	include pages/index/profession_section
+	include pages/index/history_section
+	include pages/modal_window/modal_form
+
+

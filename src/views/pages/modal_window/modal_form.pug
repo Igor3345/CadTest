@@ -1,0 +1,166 @@
+.modal_layout.js-modal_window
+    .modal_body.js-modal_body
+        .modal_body__close.js-modal_close
+            svg 
+                use(xlink:href="images/sprite_build.svg#close")
+        .modal_content.js-modal_form.d-none
+            h2.modal_content__title Отклик на вакансию
+            form.modal_form.js-modal_form-body.js-ajax-form#test1(action="/ajaxTest.html" method="GET")
+                .input_wrap.js_form-input.js-form_validate
+                    label(for="modal_form_input1") Желаемая вакансия *
+                    input#modal_form_input1(type="text")
+                    span.input_wrap__error-message Введите корректные данные
+                .input_wrap.js_form-input.js-form_validate
+                    label(for="modal_form_input2") Фамилия, имя и отчество *
+                    input#modal_form_input2(type="text")
+                    span.input_wrap__error-message Введите корректные данные
+                .modal_contacts 
+                    .input_wrap.js_form-input.js-form_validate
+                        label(for="modal_form_input3") Мобильный телефон*
+                        input#modal_form_input3(data-validate="tel")
+                        span.input_wrap__error-message Введите корректные данные
+                    .input_wrap.js_form-input
+                        label(for="modal_form_input4") E-mail
+                        input#modal_form_input4(type="text")
+                        span.input_wrap__error-message Введите корректные данные
+                .input_wrap.js_form-input.js-form_validate
+                        label(for="modal_form_input5") Образование *
+                        input#modal_form_input5(type="text")
+                        span.input_wrap__error-message Введите корректные данные
+                .input_wrap.js_form-input.js-form_validate
+                        label(for="modal_form_input6") Адрес места жительства *
+                        input#modal_form_input6(type="text")
+                        span.input_wrap__error-message Введите корректные данные
+                .modal_info
+                    .input_wrap.js_form-input.input_wrap--datepicker 
+                        label(for="modal_form_input7") Дата рождения
+                        input.js-datepicker#modal_form_input7(type="text")
+                        svg
+                            use(xlink:href="images/sprite_build.svg#calendar2")
+                    .modal_info__fileinput
+                        .form-file
+                            input#customFile.form-file-input(type="file")
+                            label.form-file-label(for="customFile")
+                                span.form-file-text Загрузить резюме
+                textarea.modal_form__textarea(placeholder = 'Комментарий')
+                .modal_form__success-box 
+                    .modal_form__success-check 
+                        .form-check
+                            input#exampleCheck1.form-check-input(type='checkbox')
+                            label.modal_form__success-text(for='exampleCheck1') Я принимаю условия #[a(href="javascript:void()") передачи информации]
+                    button.button(type="submit") Отправить
+
+        .modal_content.js-vacansion.d-none
+            .swiper.description_vacansions.js-modal_swiper_vacansion
+                .swiper-wrapper.description_vacansions__items
+                    .swiper-slide.description_vacansions__item
+                        h2.description_vacansions__title Бухгалтер по расчету заработной платы
+                        span.description_vacansions__cellary от 30 000 до 60 000 руб. до вычета налогов
+                        a.button(href="javascript:void(0)") Откликнуться
+
+                        .description_vacansions__list 
+                            h5 Обязанности
+                            ul 
+                                li Ведение бухгалтерского учета ООО и ИП "под ключ"(от обработки первичной документации до сдачи всей отчетности)
+                                li Составление отчетности как регламентированной так и управленческой.
+                                li Постановку учета с нуля,восстановление учета.
+                                li Консультирование в выборе формы налогообложения,оптимизация налогообложения.
+                                li Подготовку и сдачу отчетности в ИФНС и фонды.
+                                li Ввод первичной документации в 1с:реализация,поступление,банк,касса.
+                                li Работу с клиент-банк(проведение платежей)
+
+                        .description_vacansions__list 
+                            h5 Требования
+                            ul 
+                                li Опыт работы бухгалтером
+                                li Уверенный пользователь ПК
+                                li Личные качества аккуратность,внимательность,нацеленность на результа
+
+                        .description_vacansions__list 
+                            h5 Условия
+                            ul 
+                                li #[mark З/плата от 30 000]
+                                li от 30 000 до 60 000 руб. до вычета налогов
+
+                        span.description_vacansions__date Вакансия добавлена 16 февраля 2020
+                        a.button.description_vacansions__secondBtn(href="javascript:void(0)") Откликнуться
+
+                    .swiper-slide.description_vacansions__item
+                        h2.description_vacansions__title Бухгалтер по расчету заработной платы
+                        span.description_vacansions__cellary от 30 000 до 60 000 руб. до вычета налогов
+                        a.button(href="javascript:void(0)") Откликнуться
+                        .description_vacansions__list 
+                            h5 Обязанности
+                            ul 
+                                li Ведение бухгалтерского учета ООО и ИП "под ключ"(от обработки первичной документации до сдачи всей отчетности)
+                                li Составление отчетности как регламентированной так и управленческой.
+                                li Постановку учета с нуля,восстановление учета.
+                                li Консультирование в выборе формы налогообложения,оптимизация налогообложения.
+                                li Подготовку и сдачу отчетности в ИФНС и фонды.
+                                li Ввод первичной документации в 1с:реализация,поступление,банк,касса.
+                                li Работу с клиент-банк(проведение платежей)
+                        .description_vacansions__list 
+                            h5 Требования
+                            ul 
+                                li Опыт работы бухгалтером
+                                li Уверенный пользователь ПК
+                                li Личные качества аккуратность,внимательность,нацеленность на результа
+                        .description_vacansions__list 
+                            h5 Условия
+                            ul 
+                                li #[mark З/плата от 30 000]
+                                li от 30 000 до 60 000 руб. до вычета налогов
+
+                        span.description_vacansions__date Вакансия добавлена 16 февраля 2020
+                        a.button.description_vacansions__secondBtn(href="javascript:void(0)") Откликнуться
+
+                    .swiper-slide.description_vacansions__item
+                        h2.description_vacansions__title Бухгалтер по расчету заработной платы
+                        span.description_vacansions__cellary от 30 000 до 60 000 руб. до вычета налогов
+                        a.button(href="javascript:void(0)") Откликнуться
+                        .description_vacansions__list 
+                            h5 Обязанности
+                            ul 
+                                li Ведение бухгалтерского учета ООО и ИП "под ключ"(от обработки первичной документации до сдачи всей отчетности)
+                                li Составление отчетности как регламентированной так и управленческой.
+                                li Постановку учета с нуля,восстановление учета.
+                                li Консультирование в выборе формы налогообложения,оптимизация налогообложения.
+                                li Подготовку и сдачу отчетности в ИФНС и фонды.
+                                li Ввод первичной документации в 1с:реализация,поступление,банк,касса.
+                                li Работу с клиент-банк(проведение платежей)
+                        .description_vacansions__list 
+                            h5 Требования
+                            ul 
+                                li Опыт работы бухгалтером
+                                li Уверенный пользователь ПК
+                                li Личные качества аккуратность,внимательность,нацеленность на результа
+                        .description_vacansions__list 
+                            h5 Условия
+                            ul 
+                                li #[mark З/плата от 30 000]
+                                li от 30 000 до 60 000 руб. до вычета налогов
+
+                        span.description_vacansions__date Вакансия добавлена 16 февраля 2020
+                        a.button.description_vacansions__secondBtn(href="javascript:void(0)") Откликнуться
+            .modal_content__buttons 
+                .slider_buttons.js-modal_slider
+                    .swiper-button.swiper-button-prev
+                        svg 
+                            use(xlink:href="images/sprite_build.svg#swiper_arrow")
+                    .swiper-button.swiper-button-next
+                        svg 
+                            use(xlink:href="images/sprite_build.svg#swiper_arrow")
+
+                                
+
+
+                        
+
+                                
+
+
+
+
+
+
+            

@@ -1,0 +1,124 @@
+.personal_layout {
+    max-width: 1480px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F7F7F7;
+    margin-top: 70px;
+    position: relative;
+
+    @media(max-width:1200px) {
+        background-color: transparent;
+    }
+}
+
+.personal_slider {
+    position: relative;
+
+    .swiper-pagination {
+        display: none;
+
+        @media(max-width:767) {
+            display: flex;
+        }
+    }
+}
+
+.personal_slider__items {}
+
+
+.personal_slider__item {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    min-height: 446px;
+    justify-content: center;
+
+    @media(max-width:1200px) {
+        flex-direction: column-reverse;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.personal_slider__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 6%;
+    max-width: 628px;
+    margin-right: 10%;
+    position: relative;
+
+    @media(max-width:1200px) {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 100%;
+        padding-top: 50px;
+        background-color: #fff;
+        padding: 40px;
+    }
+
+    @media(max-width:767px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.personal_slider__name {
+    font-size: 36px;
+    line-height: 45px;
+    color: #242627;
+    margin-bottom: 20px;
+    font-weight: 400;
+
+    @media(max-width:1200px) {
+        font-size: 28px;
+        line-height: 28px;
+    }
+}
+
+.personal_slider__post {
+    color: #828282;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    display: block;
+
+    @media(max-width:767px) {
+        margin-bottom: 15px;
+    }
+}
+
+.personal_slider__description {
+    font-size: 18px;
+    line-height: 32px;
+    color: #242627;
+
+    @media(max-height:767px) {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+.personal_slider__photo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    @media(max-width:1200px) {
+        padding-top: 40px;
+        justify-content: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        background-color: #F7F7F7;
+    }
+}
+
+.personal_slider__img {
+    max-width: 100%;
+    height: auto;
+
+    @media(max-width:1200px) {
+        max-height: 359px;
+    }
+}

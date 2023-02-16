@@ -1,0 +1,232 @@
+.modal_content {
+    height: 100%;
+    padding: 0 104px;
+    position: relative;
+
+    @media(max-width:767px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.modal_content__title {
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 41px;
+    font-weight: 700;
+
+    @media(max-width:767px) {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+.input_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 70px;
+    background-color: #F2F2F2;
+    padding: 12px 28px 4px 28px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 32px;
+
+    label {
+        font-size: 16px;
+        line-height: 19px;
+        color: #828282;
+
+        @media(max-width:767px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    input {
+        border: none;
+        background: transparent;
+        outline: none;
+        font-size: 16px;
+        line-height: 19px;
+        color: #242627;
+    }
+
+    &.input_wrap--open {
+        justify-content: flex-start;
+
+        label {
+            font-size: 13px;
+            line-height: 16px;
+            transition: all $transition;
+        }
+    }
+
+    &.input_wrap--error {
+        border-radius: 2px;
+        border: 1px solid #BF1E2E;
+
+        .input_wrap__error-message {
+            display: inline-block;
+        }
+    }
+
+    &.input_wrap--datepicker {
+        max-width: 266px;
+        margin-right: 34px;
+
+        svg {
+            width: 17px;
+            height: 18px;
+            position: absolute;
+            top: 27px;
+            right: 18px;
+        }
+
+        @media(max-width:991px) {
+            max-width: 100%;
+        }
+    }
+
+    @media(max-width:991px) {
+        margin-bottom: 20px;
+    }
+}
+
+.input_wrap__error-message {
+    position: absolute;
+    font-size: 11px;
+    line-height: 13px;
+    color: #BE1A1A;
+    left: 3px;
+    bottom: -15px;
+    display: none;
+
+    @media(max-width:767px) {
+        font-size: 8px;
+        line-height: 9px;
+        bottom: -11px;
+    }
+}
+
+.modal_form__contacts {
+    display: flex;
+}
+
+.modal_contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+
+    @media(max-width:991px) {
+        display: block;
+    }
+}
+
+.modal_info {
+    display: flex;
+
+    .input_wrap {
+        margin-right: 34px;
+    }
+
+    @media(max-width:991px) {
+        flex-direction: column;
+
+        .input_wrap {
+            margin-right: 0;
+        }
+    }
+}
+
+.modal_info__fileinput {
+    height: 70px;
+    border-bottom: 1px solid #242627;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form-file {}
+
+    .form-file-label {
+        border: none;
+    }
+
+    .form-file-text {
+        border: none;
+        text-align: center;
+        font-size: 15px;
+        line-height: 19px;
+        color: #187CD3;
+    }
+}
+
+.modal_form__textarea {
+    min-height: 153px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-left: 28px;
+    padding-top: 25px;
+    margin-bottom: 32px;
+
+    @media(max-width:991px) {
+        display: none;
+    }
+}
+
+.modal_form__success-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #F2F2F2;
+    padding: 38px 34px 38px 24px;
+
+    .form-check {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .form-check-input {
+        width: 24px;
+        height: 24px;
+
+        &:checked {
+            border: none;
+        }
+    }
+
+    .button {
+        border: none;
+
+        @media(max-width:991px) {
+            width: 100%;
+        }
+    }
+
+    @media(max-width:991px) {
+        flex-direction: column;
+        border: none;
+        padding: 0;
+        margin-top: 27px;
+    }
+}
+
+.modal_form__success-check {
+    display: flex;
+    align-items: center;
+
+    @media(max-width:991px) {
+        margin-bottom: 38px;
+    }
+}
+
+.modal_form__success-text {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 0;
+    margin-left: 19px;
+    margin-top: 4px;
+}
