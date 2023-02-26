@@ -41,8 +41,8 @@
         height: 399px;
     }
 
-    @media(max-width:420px) {
-        height: 338px;
+    @media(max-width:767px) {
+        height: 318px;
     }
 }
 
@@ -58,8 +58,8 @@
         height: 399px;
     }
 
-    @media(max-width:420px) {
-        height: 338px;
+    @media(max-width:767px) {
+        height: 318px;
     }
 }
 
@@ -91,6 +91,11 @@
     .button {
         width: max-content;
 
+        @media(max-width:767px) {
+            padding: 15px 24px 23px 24px;
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 
     @media(max-width:991px) {
@@ -104,6 +109,7 @@
         padding-bottom: 38px;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 0;
     }
 }
 

@@ -11,6 +11,10 @@
         height: 440px;
         margin-top: 24px;
     }
+
+    @media(max-width:767px) {
+        height: 207px;
+    }
 }
 
 .video_section__video {

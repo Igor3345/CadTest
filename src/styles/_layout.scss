@@ -140,6 +140,15 @@ body {
 	&:not(:last-child) {
 		margin-right: 41px;
 	}
+
+	@media(max-width:767px) {
+		width: 6px;
+		height: 6px;
+
+		&:not(:last-child) {
+			margin-right: 35px;
+		}
+	}
 }
 
 .swiper-button {

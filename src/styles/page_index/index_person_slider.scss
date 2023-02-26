@@ -9,6 +9,10 @@
     @media(max-width:1200px) {
         background-color: transparent;
     }
+
+    @media(max-width:767px) {
+        margin-top: 38px;
+    }
 }
 
 .personal_slider {
@@ -17,8 +21,10 @@
     .swiper-pagination {
         display: none;
 
-        @media(max-width:767) {
+        @media(max-width:767px) {
             display: flex;
+
+
         }
     }
 }
@@ -62,6 +68,8 @@
     @media(max-width:767px) {
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 28px;
+        padding-bottom: 20px;
     }
 }
 
@@ -76,6 +84,12 @@
         font-size: 28px;
         line-height: 28px;
     }
+
+    @media(max-width:767px) {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
 }
 
 .personal_slider__post {
@@ -87,6 +101,8 @@
 
     @media(max-width:767px) {
         margin-bottom: 15px;
+        font-size: 13px;
+        line-height: 28px;
     }
 }
 
@@ -95,7 +111,7 @@
     line-height: 32px;
     color: #242627;
 
-    @media(max-height:767px) {
+    @media(max-width:767px) {
         font-size: 13px;
         line-height: 22px;
     }
@@ -113,6 +129,13 @@
         margin-right: 40px;
         background-color: #F7F7F7;
     }
+
+    @media(max-width:767px) {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 0;
+        max-height: 200px;
+    }
 }
 
 .personal_slider__img {
@@ -121,5 +144,12 @@
 
     @media(max-width:1200px) {
         max-height: 359px;
+    }
+
+    @media(max-width:767px) {
+        object-fit: contain;
+        max-height: inherit;
+        display: inline-block;
+        padding-top: 20px;
     }
 }
