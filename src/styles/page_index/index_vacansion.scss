@@ -65,7 +65,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 32px;
-    margin-bottom: 17px;
+    margin-bottom: 53px;
 
     &.vacansion_cards--hidden {
         .vacansion_cards__item {
@@ -146,8 +146,10 @@
 .vacansion_cards__link {
     display: flex;
     align-items: center;
-    padding: 19px 30px;
+    padding: 17px 26px;
     border: 1px solid #EBEBEB;
+    font-size: 14px;
+    line-height: 17px;
 
 
     svg {
@@ -180,7 +182,7 @@
     color: #242627;
     text-align: center;
     font-weight: 400;
-    margin-bottom: 46px;
+    margin-bottom: 36px;
 
     @media(max-width:991px) {
         margin-bottom: 25px;
@@ -205,7 +207,7 @@
     justify-content: center;
     align-items: center;
     background-color: #003264;
-    margin-bottom: 67px;
+    margin-bottom: 53px;
     transition: all $transition;
 
     svg {
