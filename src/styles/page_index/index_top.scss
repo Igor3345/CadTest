@@ -124,6 +124,7 @@
         position: absolute;
         z-index: -1;
         width: 100%;
+        justify-content: center;
     }
 
     @media(max-width: 420px) {
@@ -145,15 +146,10 @@
         object-fit: cover;
         object-position: left;
         max-width: initial;
-    }
-
-    @media(max-width:767px) {
-        left: 0;
-    }
-
-    @media(max-width:575px) {
         position: static;
-        max-width: 100%;
-        height: auto;
+        max-height: 256px;
+        max-width: max-content;
+        object-fit: contain;
     }
+
 }

@@ -5,10 +5,25 @@ export const header_burger = () => {
 
 
 
-    button.onclick = () => {
+    button.onclick = menuSwitch;
+
+
+    function menuSwitch(){
         button.classList.toggle('burger_menu--opened');
         nav.classList.toggle('nav--opened');
         body.classList.toggle('some_open');
+    }
+
+    window.onresize = () => {
+        if(body.clientWidth > 991){
+            menuClose();
+        }
+    }
+
+    function menuClose(){
+        button.classList.remove('burger_menu--opened');
+        nav.classList.remove('nav--opened');
+        body.classList.remove('some_open');
     }
 
 }
